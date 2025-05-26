@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --font-weight: 500;
+    --color: #ffff;
+    --padding: 12px;
+    --font-size: 16px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: var(--color);
+}
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.body-logout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    padding: 20px 0;
+    text-align: center;
+}
+.container-sub {
+    margin-bottom: 5px;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3);
+}
+.container-sub a{
+    text-decoration: none;
+    color: black;
+    font-weight: var(--font-weight);
+    font-size: var(--font-size);
+}
+.container {
+    flex: 1;
+}
+.container hr{
+    margin-bottom: 40px;
+}
+.container form{
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3);
+}
+.container form i{
+    font-size: var(--font-size);
+    color: red;
+    font-weight: 400;
+}
+.container h2{
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.container h4{
+    font-size: var(--font-size);
+    margin: 6px;
+}
+.container input{
+    width: 100%;
+    padding: var(--padding);
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: none;
+    background: #cccc;
+    outline: none;
+    font-size: var(--font-size);
+    font-weight: 400;
+    color: #333;
+}
+.container button{
+    width: 100%;
+    padding: var(--padding);
+    margin-bottom: 20px;
+    background-color: #009900;
+    color: var(--color);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    transition: 0.5s;
+}
+.logout form button{
+    width: 400px;
+    height: 50px;
+    margin: 10px;
+    padding: var(--padding);
+    background-color: #990000;
+    color: var(--color);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+}  
+footer{
+    font-size: var(--font-size);
+    padding: 20px 0;
+}
