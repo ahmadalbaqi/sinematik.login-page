@@ -29,6 +29,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SinemaTIK - Login Page</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
 </head>
     <body> 
         <div class="body">
@@ -37,21 +39,28 @@
         </div>
 
         <div class="container-sub">
-            <form action="login.php method="POST>
-            <a href="../index.php">< Kembali</a>
-            </form>
+            <a href="../index.php">&lt; Kembali</a>
         </div>
 
         <div class="container"> 
         <form action="login.php" method="POST">
             <h2>Login</h2>
-            <i><?= $login_message ?></i>           
-            <input type="text" placeholder="Username" name="username"/>
-            <input type="password" placeholder="Password" name="password"/>
+            <div class="error-message"><?= $login_message ?></div> 
+
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Username" name="username"/>
+            </div>
+
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Password" name="password"/>
+            </div>
+
             <button type="submit" name="login">Login</button>
         </form>
         </div>
-
+                
         <div class="footer">
             <p>&copy; 2025 Ahmad Albaqi. All Rights Reserved.</p>
         </div>

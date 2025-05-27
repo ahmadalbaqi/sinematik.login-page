@@ -14,9 +14,9 @@
         </form>
     </div>
 
-    <div class="footer">
+    <!-- <div class="footer">
         <p>&copy; 2025 Ahmad Albaqi. All Rights Reserved.</p>
-    </div>
+    </div> -->
 
     </div>
 </body>
