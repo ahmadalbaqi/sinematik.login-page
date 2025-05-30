@@ -30,16 +30,16 @@
     <title>SinemaTIK - Login Page</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    
 </head>
-    <body> 
-        <div class="body">
+    <body class="header finisher-header" style="width: 100%; height: 650px;">
+        <div class="body-login">
+            
         <div class="logo">
-            <img src="../assets/img/Logo SinemaTIK All BP Crop.jpg" alt="logo" width=400px height="80px">
+            <img src="../assets/img/Logo SinemaTIK All Crop.png" alt="logo" width=400px height="80px">
         </div>
 
-        <div class="container-sub">
-            <a href="../index.php">&lt; Kembali</a>
+        <div class="back-home">
+            <a href="../index.php"><i class="fa-solid fa-house"></i>Kembali</a>
         </div>
 
         <div class="container"> 
@@ -54,7 +54,8 @@
 
             <div class="input-group">
                 <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Password" name="password"/>
+                <input type="password" placeholder="Password" name="password" id="password"/>
+                 <i class="fas fa-eye" id="togglePassword"></i>
             </div>
 
             <button type="submit" name="login">Login</button>
@@ -65,5 +66,9 @@
             <p>&copy; 2025 Ahmad Albaqi. All Rights Reserved.</p>
         </div>
         </div>
+
+        <script src="../assets/js/finisher-header.es5.min.js" ></script>
+        <script src="../assets/js/script.js" type="text/javascript"></script>
+
     </body>
 </html>

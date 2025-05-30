@@ -16,15 +16,20 @@
 </head>
 <body>
     <div class="body-logout">
-    <div class="logout">
-        <form action="dashboard.php" method="POST">
-            <button type="submit" name="logout">Logout</button>
-        </form>
-    </div>
 
-    <!-- <div class="footer">
-        <p>&copy; 2025 Ahmad Albaqi. All Rights Reserved.</p>
-    </div> -->
+        <div class="logo">
+            <img src="../assets/img/Logo SinemaTIK All Crop.png" alt="logo" width=400px height="80px">
+        </div>
+
+        <div class="logout">
+            <form action="dashboard.php" method="POST">
+                <button type="submit" name="logout">Logout</button>
+            </form>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 Ahmad Albaqi. All Rights Reserved.</p>
+        </div>
 
     </div>
 </body>

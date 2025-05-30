@@ -2,6 +2,8 @@
 :root{
     --font-weight: 500;
     --color: #ffff;
+    --color-2: #333;
+    --color-3: black;
     --padding: 12px;
     --font-size: 16px;
 }
@@ -11,10 +13,7 @@
     box-sizing: border-box;
     font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body{
-    background-color: var(--color);
-}
-.body{
+.body-login{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,6 +24,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .logo{
     height: 120px;
@@ -32,8 +32,9 @@ body{
     padding: 20px 0;
     margin-bottom: 20px;
     text-align: center;
+    background-color: black;
 }
-.container-sub {
+.back-home{
     margin-bottom: 5px;
     width: 100%;
     max-width: 400px;
@@ -42,13 +43,16 @@ body{
     border-radius: 10px;
     box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3);
 }
-.container-sub a{
+.back-home a{
     text-decoration: none;
     color: black;
     font-weight: var(--font-weight);
     font-size: var(--font-size);
 }
-.container {
+.back-home i.fa-house{
+    padding-right: 5px;
+}
+.container{
     flex: 1;
     margin-bottom: 40px;
 }
@@ -79,7 +83,7 @@ body{
     outline: none;
     font-size: var(--font-size);
     font-weight: 400;
-    color: #333;
+    color: var(--color-2);
 }
 .container button{
     width: 100%;
@@ -95,19 +99,32 @@ body{
     transition: 0.5s;
 }
 .input-group {
+    width: 100%;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
-.input-group i {
+.input-group i.fa-user,
+.input-group i.fa-lock {
     position: absolute;
     left: 12px;
     top: 38%;
     transform: translateY(-50%);
-    color: #555;
+    color: var(--color-2);
     font-size: 18px;
 }
+.input-group i.fa-eye,
+.input-group i.fa-eye-slash {
+    position: absolute;
+    right: 12px;
+    top: 38%;
+    transform: translateY(-50%);
+    color: var(--color-2);
+    font-size: 18px;
+    cursor: pointer;
+}
 .input-group input {
-    padding-left: 42px;
+    padding-right: 40px;
+    padding-left: 40px;
     height: 44px;
     border: 1px solid #ccc;
 }
@@ -116,10 +133,14 @@ body{
     font-size: 14px;
     margin-bottom: 10px;
 }
+.logout{
+    flex: 1;
+    margin-bottom: 20px;
+}
 .logout form button{
     width: 400px;
     height: 50px;
-    margin: 10px;
+    margin-top: auto;
     padding: var(--padding);
     background-color: #990000;
     color: var(--color);
@@ -128,14 +149,14 @@ body{
     cursor: pointer;
     font-size: var(--font-size);
     font-weight: var(--font-weight);
-}  
+}
 .footer{
     width: 100%;
     height: 50px;
     font-size: var(--font-size);
     font-weight: var(--font-weight);
     padding: 20px 0;
-    background-color: #333;
+    background-color: var(--color-3);
     color: var(--color);
     display: flex;
     justify-content: center;
